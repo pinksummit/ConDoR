@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="6dip">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/serverHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dip">
+
+        <Switch
+            android:id="@+id/serverSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="6dip"
+            android:layout_marginRight="6dip"/>
+
+        <TextView
+            android:id="@+id/serverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:gravity="center_vertical"
+            android:text="@string/status_name"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/serverAddressName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_address_name"
+        android:layout_below="@id/serverHeader"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/serverAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_address_example"
+        android:layout_below="@+id/serverHeader"
+        android:layout_toEndOf="@+id/serverAddressName"
+        android:layout_toRightOf="@+id/serverAddressName"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"/>
+
+    <LinearLayout
+        android:id="@+id/servicesLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/serverAddressName">
+    </LinearLayout>
+
+</RelativeLayout>

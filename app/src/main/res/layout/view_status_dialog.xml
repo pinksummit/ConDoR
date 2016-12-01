@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip">
+
+    <EditText
+        android:id="@+id/statusDialogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:text="Cohesive-DCGS-SOF"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusDialogName"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <Spinner
+            android:id="@+id/statusDialogProtocol"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="2dp"
+            android:text="://"/>
+
+        <EditText
+            android:id="@+id/statusDialogAddress"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:text="cohsvw-pf-app01.pf.cee-w.net"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="2dp"
+            android:text=":"/>
+
+        <EditText
+            android:id="@+id/statusDialogPort"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="Port"
+            android:text="80"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingest Data to this Server"
+        android:id="@+id/statusDialogIngestServer"
+        android:checked="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

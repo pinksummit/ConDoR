@@ -1,0 +1,94 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:padding="6dp">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dp"
+            android:text="Title" />
+
+        <EditText
+            android:id="@+id/ingest_title"
+            android:layout_column="1"
+            android:layout_width="150dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dp"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/ingest_date"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:text="New Text" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dp"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/ingest_location"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:text="UNK LOCATION" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dp"
+            android:text="Thumbnail" />
+
+        <ImageView
+            android:id="@+id/ingest_thumbnail"
+            android:layout_column="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/feed_thumbnail_description"
+            android:scaleType="fitCenter" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dp"
+            android:text="Content" />
+
+        <EditText
+            android:id="@+id/ingest_content"
+            android:layout_column="1"
+            android:layout_width="150dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textMultiLine" />
+    </TableRow>
+</TableLayout>

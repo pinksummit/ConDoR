@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/statusAddress"
+        android:layout_width="95dp"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:text="@string/status_address" />
+
+    <TextView
+        android:id="@+id/statusName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/statusAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="@string/status_name" />
+
+    <ImageButton
+        android:id="@+id/statusIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/statusUploadIcon"
+        android:layout_toLeftOf="@+id/statusUploadIcon"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/status_notification_good"
+        android:src="@drawable/ic_action_accept"
+        android:singleLine="true" />
+
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="@string/status_text"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toStartOf="@+id/statusIcon"
+        android:layout_toLeftOf="@+id/statusIcon"/>
+
+    <TextView
+        android:id="@+id/statusPort"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:text="@string/status_port"
+        android:layout_below="@+id/statusName"
+        android:layout_toEndOf="@id/statusAddress"
+        android:layout_toRightOf="@id/statusAddress"/>
+
+    <ImageButton
+        android:id="@+id/statusUploadIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/status_notification_good"
+        android:src="@drawable/ic_action_upload"
+        android:singleLine="true" />
+    <!--
+    <Button
+        android:id="@+id/statusCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:minWidth="32dp"
+        android:minHeight="32dp"
+        android:background="@drawable/status_notification_warn"
+        android:text="@string/status_number"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:singleLine="true" >
+    </Button>
+    -->
+
+</RelativeLayout>

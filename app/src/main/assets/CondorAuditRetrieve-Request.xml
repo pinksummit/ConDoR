@@ -1,0 +1,56 @@
+<AuditRecords xmlns:ism="urn:us:gov:ic:ism" xmlns:iccve="urn:us:gov:ic:ism-cvenum" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:common="urn:us:gov:ic:common" xmlns:cve="urn:us:gov:ic:audit-cvenum" xmlns="urn:us:gov:di2e:audit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:audit="urn:us:gov:ic:audit" xmlns:di2e="urn:us:gov:di2e:audit" xmlns:di2e-audit-http="urn:us:gov:di2e:audit.http" xmlns:di2e-audit-cdr="urn:us:gov:di2e:audit.cdr" ism:DESVersion="7" ism:resourceElement="true" ism:createDate="2011-03-01" ism:classification="U" ism:ownerProducer="USA">
+	<di2e:AuditRecord auditRecordType="BUSINESS_ANALYTICS" ism:classification="U" ism:ownerProducer="USA">
+		<audit:Id>
+			<audit:TypeOfGenericIdentifier>GUID</audit:TypeOfGenericIdentifier>
+			<audit:GenericIdentifierValue>guide://Condor/$UUID$</audit:GenericIdentifierValue>
+		</audit:Id>
+		<audit:Creator>
+			<audit:TypeOfIdentityIdentifier>HOST_NAME</audit:TypeOfIdentityIdentifier>
+			<audit:IdentityIdentifierValue>$HOST_NAME$</audit:IdentityIdentifierValue>
+		</audit:Creator>
+		<audit:DateTime>$DATE_TIME$</audit:DateTime>
+		<audit:WorkflowId>guide://Condor/$EMID$</audit:WorkflowId>
+		<audit:Message>Content Search from Condor mobile application from device $HOST_NAME$ by user $USER_NAME$</audit:Message>
+		<audit:Action>RETRIEVE</audit:Action>
+		<audit:ActionResult>SUCCESS</audit:ActionResult>
+		<audit:ActionInitiator>
+            <audit:TypeOfIdentityIdentifier>USER_ID</audit:TypeOfIdentityIdentifier>
+            <audit:IdentityIdentifierValue>$USER_NAME$</audit:IdentityIdentifierValue>
+        </audit:ActionInitiator>
+		<ActionOrganization>$USER_ORG$</ActionOrganization>
+		<audit:ActionTarget>
+			<audit:TypeOfIdentityIdentifier>PROCESS_ID</audit:TypeOfIdentityIdentifier>
+			<audit:IdentityIdentifierValue>$URL$</audit:IdentityIdentifierValue>
+		</audit:ActionTarget>
+		<audit:ActionTarget>
+			<audit:TypeOfIdentityIdentifier>HOST_NAME</audit:TypeOfIdentityIdentifier>
+			<audit:IdentityIdentifierValue>$HOST_NAME$</audit:IdentityIdentifierValue>
+		</audit:ActionTarget>
+		<audit:ActionTarget>
+			<audit:TypeOfIdentityIdentifier>IP_ADDRESS</audit:TypeOfIdentityIdentifier>
+			<audit:IdentityIdentifierValue>$SERVICE_IP$</audit:IdentityIdentifierValue>
+		</audit:ActionTarget>
+        <audit:ActionLocation>
+			<audit:TypeOfGenericIdentifier>IP_ADDRESS</audit:TypeOfGenericIdentifier>
+			<audit:GenericIdentifierValue>$DEVICE_IP$</audit:GenericIdentifierValue>
+		</audit:ActionLocation>
+        <audit:ActionLocation>
+			<audit:TypeOfGenericIdentifier>DEVICE_ID</audit:TypeOfGenericIdentifier>
+			<audit:GenericIdentifierValue>$DEVICE_ID$</audit:GenericIdentifierValue>
+		</audit:ActionLocation>
+		<Resource>
+			<audit:ResourceBody>
+				<di2e-audit-cdr:RetrieveRequest>
+					<di2e-audit-http:Version>1.1</di2e-audit-http:Version>
+					<di2e-audit-http:Method>GET</di2e-audit-http:Method>
+					<di2e-audit-http:URL>$RETRIEVE_URL$</di2e-audit-http:URL>
+					<di2e-audit-http:HeaderList>
+						$HEADERS$
+					</di2e-audit-http:HeaderList>
+                    <di2e-audit-cdr:DownloadStartTime>$DATE_TIME$</di2e-audit-cdr:DownloadStartTime>
+					<di2e-audit-cdr:ContentUrl>$RETRIEVE_URL$</di2e-audit-cdr:ContentUrl>
+				</di2e-audit-cdr:RetrieveRequest>
+			</audit:ResourceBody>
+		</Resource>
+	</di2e:AuditRecord>
+</AuditRecords>

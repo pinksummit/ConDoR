@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip">
+
+    <TextView
+        android:id="@+id/query_terms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Search Terms"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/query_seperator_terms"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/query_terms_title"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/query_terms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query_seperator_terms"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/query_content_collections_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query_terms_text"
+        android:text="Content Collections"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/query_seperator_collections"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/query_content_collections_title"
+        android:background="@android:color/darker_gray" />
+
+
+    <RadioGroup
+        android:id="@+id/query_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query_seperator_collections"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/query_radio_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+
+        <RadioButton
+            android:id="@+id/query_radio_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Imagery" />
+
+        <RadioButton
+            android:id="@+id/query_radio_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Video" />
+
+        <RadioButton
+            android:id="@+id/query_radio_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor Vieo" />
+    </RadioGroup>
+
+</RelativeLayout>

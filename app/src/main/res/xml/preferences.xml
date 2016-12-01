@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Data">
+
+        <CheckBoxPreference
+            android:key="@string/settings_mock_key"
+            android:title="Populate with mock data"
+            android:summary="True/False"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="@string/settings_ddms_key"
+            android:title="Pubilsh Metadata in DDMS format"
+            android:summary="True/False"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="@string/settings_publish_audit_key"
+            android:title="Publish Audit Logs to Audit Endpoint"
+            android:summary="True/False"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+
+        <Preference
+            android:title="Software Information" />
+
+        <Preference
+            android:key="licenses"
+            android:title="Legal"
+            android:summary="Open source licenses" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

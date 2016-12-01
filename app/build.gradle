@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+    defaultConfig {
+        applicationId "com.cohesiveintegrations.px.android1"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 7
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.android.support:cardview-v7:22.0.0'
+    compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile 'com.getbase:floatingactionbutton:1.9.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'ws.argo.ProbeGenerator:ProbeGenerator:0.2.3-CR2'
+    compile 'com.nanohttpd:nanohttpd:2.1.1'
+    compile 'com.google.api-client:google-api-client-gson:1.20.0'
+
+    // START AUTHENTICATION DEPENDENCIES
+    // Exclude dependencies as list on:
+    // https://developers.google.com/api-client-library/java/google-oauth-java-client/setup
+    compile('com.google.oauth-client:google-oauth-client-java6:1.20.0') {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+        exclude group: 'junit', module: 'junit'
+        exclude group: 'com.google.android', module: 'android'
+    }
+    compile 'com.google.http-client:google-http-client-android:1.20.0'
+    //END AUTHENTICATION DEPENDENCIES
+
+
+}

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray"
+        android:layout_margin="0dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/listUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="18dp"
+            android:src="@drawable/ic_action_upload" />
+
+        <ImageButton
+            android:id="@+id/listPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="18dp"
+            android:src="@drawable/ic_action_camera" />
+
+        <ImageButton
+            android:id="@+id/listSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="18dp"
+            android:src="@drawable/ic_action_search" />
+
+        <ImageButton
+            android:id="@+id/listVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="18dp"
+            android:src="@drawable/ic_action_video" />
+
+        <ImageButton
+            android:id="@+id/listLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="18dp"
+            android:src="@drawable/ic_action_location_found" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/feedSwipeRefreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottomNav">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feedlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

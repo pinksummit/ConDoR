@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">ConDoR</string>
+
+    <!-- Navigation Menu -->
+    <string name="title_home">Home</string>
+    <string name="title_search">Feed</string>
+    <string name="title_status">Servers</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Settings -->
+    <string name="title_settings">Settings</string>
+    <string name="settings_category_data" />
+    <string name="settings_mock_key">useMockData</string>
+    <string name="settings_ddms_key">useDDMS</string>
+    <string name="settings_publish_audit_key">publishAuditLogs</string>
+
+    <!-- Action bar -->
+    <string name="action_refresh">Refresh</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Feed -->
+    <string name="feed_sample_title">Metacard One</string>
+    <string name="feed_sample_description">The quick brown fox jumps over the lazy dog</string>
+    <string name="feed_sample_site">DDF_ONE</string>
+    <string name="feed_sample_date">Jan 1 2015</string>
+    <string name="feed_thumbnail_description">Thumbnail for the metacard</string>
+    <string name="feed_details">Metacard Details</string>
+    <string name="feed_transition_card">Metacard Transition</string>
+
+    <!-- Server Status -->
+    <string name="status_error">Connection error with server</string>
+    <string name="status_name">Example DDF</string>
+    <string name="status_address">127.0.0.1</string>
+    <string name="status_port">8181</string>
+    <string name="status_number">6</string>
+    <string name="status_text">Connected</string>
+    <string name="status_details">Server Details</string>
+
+    <!-- Server Details -->
+    <string name="detail_address_name">IP Address</string>
+    <string name="detail_address_example">192.168.1.1</string>
+
+    <!-- Upload -->
+
+    <!-- Metacard -->
+    <string name="metacard_sample_size">12.23MB</string>
+
+</resources>

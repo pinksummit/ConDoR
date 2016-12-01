@@ -1,0 +1,40 @@
+<ddms:Resource xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/" xmlns:ICISM="urn:us:gov:ic:ism:v2" xmlns:gml="http://www.opengis.net/gml">
+	<ddms:identifier ddms:qualifier="urn:catalog:resource-uri" ddms:value="$RESOURCE$" />
+	<ddms:title ICISM:classification="U" ICISM:ownerProducer="USA">$TITLE$</ddms:title>
+	<ddms:description ICISM:classification="U" ICISM:ownerProducer="USA">CONTENT</ddms:description>
+	<ddms:language ddms:qualifier="http://metadata.dod.mil/mdr/ns/ExtStd/iso_639-2b.owl#en" ddms:value="en" />
+	<ddms:dates ddms:posted="$DATE$" />
+	<ddms:rights ddms:copyright="true" ddms:intellectualProperty="true" ddms:privacyAct="false" />
+	<ddms:creator ICISM:classification="U" ICISM:ownerProducer="USA">
+		<ddms:Person>
+			<ddms:name>$CREATOR$</ddms:name>
+			<ddms:surname>$CREATOR$</ddms:surname>
+		</ddms:Person>
+	</ddms:creator>
+	<ddms:publisher ICISM:classification="U" ICISM:ownerProducer="USA">
+		<ddms:Organization>
+			<ddms:name>$DEVICE_ID$</ddms:name>
+		</ddms:Organization>
+	</ddms:publisher>
+	<ddms:format>
+		<ddms:Media>
+			<ddms:mimeType>$FORMAT$</ddms:mimeType>
+			<ddms:medium>digital</ddms:medium>
+		</ddms:Media>
+	</ddms:format>
+	<ddms:subjectCoverage>
+		<ddms:Subject>
+			$KEYWORDS$
+		</ddms:Subject>
+	</ddms:subjectCoverage>
+	<ddms:geospatialCoverage>
+		<ddms:GeospatialExtent>
+			<ddms:boundingGeometry>
+				<gml:Point gml:id="GML1" srsName="http://metadata.dod.mil/mdr/ns/GSIP/crs/WGS84E_2D">
+					<gml:pos>$LAT$ $LONG$</gml:pos>
+				</gml:Point>
+			</ddms:boundingGeometry>
+		</ddms:GeospatialExtent>
+	</ddms:geospatialCoverage>
+	<ddms:security ICISM:classification="U" ICISM:ownerProducer="USA" />
+</ddms:Resource>
